@@ -1,0 +1,35 @@
+{
+  "name": "classifieds-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production parcel build --log-level 4 src/index.html --public-url ./",
+    "deploy": "./deploy.sh",
+    "predeploy": "yarn build",
+    "watch": "parcel --port=7001 src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "graphql": "^15.1.0",
+    "graphql-tag": "^2.10.3",
+    "react": "^16.8.3",
+    "react-apollo": "^3.1.5",
+    "react-dom": ">= 16.8.0",
+    "react-hook-form": "^5.7.2",
+    "react-is": ">= 16.8.0",
+    "react-redux": "^7.2.0",
+    "redux": "^2.0.0 || ^3.0.0 || ^4.0.0-0",
+    "styled-components": "^4.1.1",
+    "yup": "^0.29.1"
+  },
+  "alias": {
+    "#root": "./src"
+  }
+}

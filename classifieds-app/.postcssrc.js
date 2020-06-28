@@ -1,0 +1,8 @@
+module.exports = {
+  modules: true,
+  plugins: {
+    "postcss-modules": {
+      generateScopedName: "[name]_[local]_[hash:base64:5]",
+    },
+  },
+};

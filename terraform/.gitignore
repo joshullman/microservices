@@ -1,0 +1,13 @@
+# Terraform config
+.terraform/
+
+# Terraform state
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform variables
+terraform.tfvars
+
+*.pem
+
+*.key
