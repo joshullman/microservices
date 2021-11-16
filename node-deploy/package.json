@@ -7,7 +7,7 @@
     "node-deploy": "src/index.js"
   },
   "dependencies": {
-    "aws-sdk": "^2.704.0",
+    "aws-sdk": "^2.814.0",
     "date-fns": "^2.14.0",
     "dotenv": "^8.2.0"
   }
